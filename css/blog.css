@@ -1,0 +1,279 @@
+header {
+  height: 70px;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.top-logo img {
+  width: 70px;
+  margin: 25px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.menu-item {
+  display: flex;
+  text-align: right;
+  font-weight: bold;
+}
+
+.menu-item-list {
+  margin: 20px 15px;
+  color: #996600;
+}
+.menu-item-list:last-child {
+  margin-right: 30px;
+}
+.menu-item-list a {
+  color: #000;
+}
+.menu-item-list a:visited {
+  color: #000;
+}
+.nav {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item {
+    display: none;
+  }
+  .nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    transition: 0.7s;
+    text-align: center;
+    background: #fff;
+  }
+  .nav ul {
+    padding-top: 80px;
+  }
+  .nav li {
+    list-style-type: none;
+    margin-top: 50px;
+    color: blue;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    top: 20px;
+  }
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .menu__line--top {
+    top: 0;
+  }
+  .menu__line--middle {
+    top: 14px;
+  }
+  .menu__line--bottom {
+    bottom: 0;
+  }
+  .menu-icon.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .menu-icon.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu-icon.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+  .in {
+    transform: translateX(100%);
+  }
+}
+
+main {
+  padding-top: 70px;
+}
+
+.top {
+  position: relative;
+  background: url(../img/mv.png) center no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+.top-copy {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.top-copy-ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.blog {
+  padding: 60px 50px;
+  box-sizing: border-box;
+}
+.blog-ttl {
+  font-size: 30px;
+  margin: 20px;
+  font-weight: bold;
+}
+.blog-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 30px auto;
+  justify-content: center;
+}
+.card {
+  width: 30%;
+  margin: 10px 15px;
+}
+
+.blog-thumnail {
+  width: 100%;
+  height: auto;
+}
+.blog-contents {
+  text-align: left;
+  padding: 10px 0;
+}
+.blog-date {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.blog-text {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.blog-text a:hover {
+  opacity: 06;
+}
+.blog-text a:visited {
+  color: #000;
+}
+
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    margin: 10px 15px;
+  }
+}
+
+.inquiry {
+  margin-top: 35px;
+  text-align: center;
+  background: #eee;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+.inq-ttl {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.inq-text {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.section-link {
+  background: red;
+  color: #fff;
+  width: 250px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 15px;
+  font-weight: bold;
+}
+
+footer {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+  color: #fff;
+}
+
+.copyright {
+  color: #fff;
+}
+
+.footer-menu ul {
+  display: flex;
+  list-style: none;
+}
+.footer-menu ul a {
+  color: #fff;
+}
+.footer-menu ul a:visited {
+  color: #fff;
+}
+
+.footer-manu-item {
+  border-right: 2px solid #fff;
+  padding: 0 10px;
+}
+.footer-manu-item:last-child {
+  border: none;
+  padding: 0 10px;
+}
+.footer-responsive {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .footer-menu {
+    display: none;
+  }
+  .footer-responsive {
+    display: contents;
+  }
+  .footer-responsive-menu {
+    list-style: none;
+  }
+  .footer-responsive a {
+    color: #fff;
+  }
+  .footer-responsive a:visited {
+    color: #fff;
+  }
+  .footer-responsive li {
+    padding: 10px 20px;
+  }
+}
