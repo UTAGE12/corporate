@@ -196,6 +196,15 @@ main {
   width: 40%;
   text-align: left;
 }
+
+@media screen and (max-width: 768px) {
+  .service-list-contents {
+    margin: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: left;
+  }
+}
 .service-list-contents img {
   width: 100%;
   margin-bottom: 5px;
@@ -288,10 +297,17 @@ a:visited {
   display: flex;
   padding: 5px auto;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .card {
   width: 30%;
   margin: 10px 15px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 
 .blog-thumnail {
@@ -310,6 +326,12 @@ a:visited {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.5;
+}
+.blog a {
+  color: #000;
+}
+.blog a:visited {
+  color: #000;
 }
 
 .info {

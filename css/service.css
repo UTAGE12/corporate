@@ -173,6 +173,7 @@ main {
   box-sizing: border-box;
   border-top: 1px solid #777;
 }
+
 .service-item:last-child {
   border-bottom: 1px solid #777;
 }
@@ -198,6 +199,23 @@ main {
   line-height: 1.8;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .service-item {
+    margin: 10px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-top: 1px solid #777;
+  }
+  .service-image {
+    width: 100%;
+  }
+  .service-item-contents {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
 .inquiry {
   margin-top: 35px;
   text-align: center;

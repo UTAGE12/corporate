@@ -164,9 +164,17 @@ main {
   margin: 30px auto;
   justify-content: center;
 }
+
 .card {
   width: 30%;
   margin: 10px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 10px auto;
+  }
 }
 
 .blog-thumnail {
